@@ -8,8 +8,11 @@ import org.springframework.stereotype.Component;
 public class Needle7 {
 
     private Deth8 deth;
+
     @Autowired
-    public Needle7(Deth8 deth) { this.deth = deth; }
+    public void setDeth(Deth8 deth) {
+        this.deth = deth;
+    }
 
     @Override
     public String toString() {

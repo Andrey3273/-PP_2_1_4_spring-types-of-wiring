@@ -8,8 +8,11 @@ import org.springframework.stereotype.Component;
 public class Duck5 {
 
     private Egg6 egg;
+
     @Autowired
-    public Duck5(@Qualifier("egg") Egg6 egg) { this.egg = egg; }
+    public Duck5(Egg6 egg) {
+        this.egg = egg;
+    }
 
     @Override
     public String toString() {
